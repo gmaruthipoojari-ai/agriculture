@@ -50,7 +50,7 @@ contactForm.addEventListener("submit", function(event) {
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", function() {
+menuBtn.addEventListener("click", function () {
 
     navLinks.classList.toggle("active");
 
