@@ -1553,33 +1553,17 @@ body{
 
 @media(max-width:900px) {
 
-    .navbar {
-        padding: 16px 5%;
-    }
-
-
-    /* Hide desktop login */
-
     .navbar > .login-btn {
         display: none;
     }
-
-
-    /* Hamburger */
 
     .menu-btn {
         display: block;
     }
 
-
-    /* Navigation */
-
     .nav-links {
-
         position: absolute;
-
         top: 100%;
-
         left: 0;
 
         width: 100%;
@@ -1594,53 +1578,28 @@ body{
 
         padding: 10px 0;
 
-        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-
         display: none;
+
+        z-index: 9999;
     }
-
-
-    /* When menu is active */
 
     .nav-links.active {
         display: flex;
     }
 
-
     .nav-links li {
         width: 100%;
-
         text-align: center;
     }
 
-
     .nav-links li a {
         display: block;
-
         padding: 14px;
-
-        width: 100%;
     }
-
-
-    .nav-links li a:hover {
-        background: #E8F5E9;
-    }
-
-
-    /* Mobile Login */
 
     .mobile-login {
         display: block;
     }
-
-
-    .mobile-login a {
-        color: #2E7D32 !important;
-
-        font-weight: 600;
-    }
-
 }
 html {
     scroll-behavior: smooth;

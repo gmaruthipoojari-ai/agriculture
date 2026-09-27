@@ -1,5 +1,10 @@
 console.log("JavaScript is connected!");
 
+
+// ===========================
+// STATISTICS COUNTERS
+// ===========================
+
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach(counter => {
@@ -32,17 +37,28 @@ counters.forEach(counter => {
 
 });
 
+
+// ===========================
+// CONTACT FORM
+// ===========================
+
 const contactForm = document.getElementById("contactForm");
 
-contactForm.addEventListener("submit", function(event) {
+if (contactForm) {
 
-    event.preventDefault();s
+    contactForm.addEventListener("submit", function(event) {
 
-    alert("Thank you! Your message has been received. 🌾");
+        event.preventDefault();
 
-    contactForm.reset();
+        alert("Thank you! Your message has been received. 🌾");
 
-});
+        contactForm.reset();
+
+    });
+
+}
+
+
 // ===========================
 // MOBILE NAVBAR
 // ===========================
@@ -50,8 +66,12 @@ contactForm.addEventListener("submit", function(event) {
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", function () {
+if (menuBtn && navLinks) {
 
-    navLinks.classList.toggle("active");
+    menuBtn.addEventListener("click", function() {
 
-});
+        navLinks.classList.toggle("active");
+
+    });
+
+}
